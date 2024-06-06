@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="font-sans">
 
 
 <div class=" shadow-lg flex items-center bg-white h-[10vh]">
@@ -18,25 +18,34 @@
         </div>
         <div class="hidden sm:hidden xs:hidden md:block xl:block lg:block">
             <ul class="flex  items-center flex-row">
-                <li><a class="p-3 text-sm md:text-xs lg:text-sm xl:text-sm text-gray-500 hover:text-black font-bold duration-700" href="#">HOMEPAGE</a></li>
-                <li><a class="p-3 text-sm md:text-xs lg:text-sm xl:text-sm text-gray-500 hover:text-black font-bold duration-700" href="#">ABOUT ME</a></li>
-                <li><a class="p-3 text-sm md:text-xs lg:text-sm xl:text-sm text-gray-500 hover:text-black font-bold duration-700" href="#">SERVICES</a></li>
-                <li><a class="p-3 text-sm md:text-xs lg:text-sm xl:text-sm text-gray-500 hover:text-black font-bold duration-700" href="#">WORKS</a></li>
-                <li><a class="p-3 text-sm md:text-xs lg:text-sm xl:text-sm text-gray-500 hover:text-black font-bold duration-700" href="#">CONTACT</a></li>
+                <li><a class="p-3 text-sm md:text-xs lg:text-sm xl:text-sm text-gray-500 hover:text-blue-900 font-bold duration-700" href="#">HOMEPAGE</a></li>
+                <li><a class="p-3 text-sm md:text-xs lg:text-sm xl:text-sm text-gray-500 hover:text-blue-900 font-bold duration-700" href="#">ABOUT ME</a></li>
+                <li><a class="p-3 text-sm md:text-xs lg:text-sm xl:text-sm text-gray-500 hover:text-blue-900 font-bold duration-700" href="#">SERVICES</a></li>
+                <li><a class="p-3 text-sm md:text-xs lg:text-sm xl:text-sm text-gray-500 hover:text-blue-900 font-bold duration-700" href="#">WORKS</a></li>
+                <li><a class="p-3 text-sm md:text-xs lg:text-sm xl:text-sm text-gray-500 hover:text-blue-900 font-bold duration-700" href="#">CONTACT</a></li>
             </ul>
         </div>
         <div>
             <i class="fa-solid hidden sm:hidden xs:hidden md:block xl:block lg:block text-yellow-400 cursor-pointer text-3xl fa-moon"></i>
-            <div class=" xs:block sm:block  md:hidden  xl:hidden lg:hidden cursor-pointer">
+            <div id="dropdown" class="  xs:block  sm:block  md:hidden  xl:hidden lg:hidden cursor-pointer ">
                 <div class=" w-[24px] h-[2px] bg-blue-900 mt-1" ></div>
                 <div class=" w-[20px] h-[2px] bg-blue-900 mt-1"></div>
                 <div class=" w-[15px] h-[2px] bg-blue-900 mt-1"></div>
+                <ul id="dropdown-menu" class="hidden  bg-blue-600 z-50  text-white pt-[52px] pb-[2px] absolute right-0 top-0 w-[%100] text-center w-screen ">
+                    <li class="p-3 hover:rounded hover:bg-blue-300 hover:duration-700   hover:shadow-sm hover:shadow-white  ">HOMEPAGE</li>
+                    <li class="p-3 hover:rounded hover:bg-blue-300 hover:duration-700 hover:shadow-sm hover:shadow-white  ">ABOUT ME</li>
+                    <li class="p-3 hover:rounded hover:bg-blue-300 hover:duration-700 hover:shadow-sm hover:shadow-white ">SERVICES</li>
+                    <li class="p-3 hover:rounded hover:bg-blue-300  hover:duration-700 hover:shadow-sm hover:shadow-white ">WORKS</li>
+                    <li class="p-3 hover:rounded hover:bg-blue-300 hover:duration-700 hover:shadow-sm hover:shadow-white ">CONTACT</li>
+                    <button id="closebtn" class="border   rounded absolute top-2 right-2 border-white py-2 px-4  bg-transparent text-red-700  duration-700">X</button>
+
+                </ul>
             </div>
         </div>
     </nav>
 </div>
 
 <div class="bg-gradient-to-r from-blue-200  h-[90vh]"></div>
-
+<script src="./app.js"></script>
 </body>
 </html>                            
